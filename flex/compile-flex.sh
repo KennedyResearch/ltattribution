@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mxmlc ./src/ltattr_flex.mxml -output ltattr_flex.swf -library-path+=./lib -library-path+="/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flexbuilder.project_4.7.0.349722/dcradSwcs/4.5/libs" -library-path+="/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flexbuilder.project_4.7.0.349722/fiberSwcs/4.5/libs" -library-path+="/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flexbuilder.project_4.7.0.349722/dcradSwcs/4.5/locale/en_US" -library-path+="/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flexbuilder.project_4.7.0.349722/fiberSwcs/4.5/locale/en_US"

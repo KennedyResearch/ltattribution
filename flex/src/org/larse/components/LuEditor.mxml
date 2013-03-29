@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ComboBoxGridItemEditor xmlns:fx="http://ns.adobe.com/mxml/2009"
+						  xmlns:s="library://ns.adobe.com/flex/spark"
+						  xmlns:mx="library://ns.adobe.com/flex/mx"
+						  creationComplete="onCreationComplete(event)"
+						  width="400" height="300">
+	<fx:Declarations>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+
+			private var lus:Array = ["Forest",
+				"Natural non-forest vegetation",
+				"Non-vegetated natural",
+				"Agriculture",
+				"Urban",
+				"Non-vegetated anthropogenic"];
+
+			protected function onCreationComplete(event:FlexEvent):void
+			{
+				this.comboBox.textInput.editable = false;
+				this.dataProvider = new ArrayCollection(lus);
+			}
+		]]>
+	</fx:Script>
+
+	<!--
+	<s:dataProvider>
+		<s:ArrayList>
+			<fx:String>Trees</fx:String>
+			<fx:String>Shrubs</fx:String>
+			<fx:String>Herbaceous</fx:String>
+			<fx:String>Impervious</fx:String>
+			<fx:String>Barren</fx:String>
+			<fx:String>Water</fx:String>
+			<fx:String>Snow/Ice</fx:String>
+		</s:ArrayList>
+	</s:dataProvider>
+	-->
+</s:ComboBoxGridItemEditor>
