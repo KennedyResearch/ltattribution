@@ -14,7 +14,7 @@ class BaseService {
 	*/
 	
 	protected $username = "root";
-	protected $password = "jka9f#ccW3";
+	protected $password = "foobar";
        	protected $server = "localhost";
 	protected $port = "3306";
 	protected $databasename = "landtrendr2";
